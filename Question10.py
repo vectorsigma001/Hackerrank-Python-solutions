@@ -3,6 +3,7 @@ Here you have given number of student names and score
 print the second lowest student score 
 print the score with names 
 if the score is same print the score with name alphabetically 
+
 """
 if __name__ == '__main__':
     li=[]
