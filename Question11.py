@@ -12,3 +12,4 @@ if __name__ == '__main__':
             SUM = sum(student_marks[i])
             avg = SUM/3
             print(f"{avg:.2f}")
+#what about here 
