@@ -12,7 +12,7 @@ Initialize your list and read in the value of  followed by  lines of commands wh
 each command will be of the  types listed above. Iterate through each command in
 order and perform the corresponding operation on your list.
 
-
+#okay
 Sample Input
      12
     insert 0 5
