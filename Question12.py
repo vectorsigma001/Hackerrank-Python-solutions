@@ -32,8 +32,7 @@ Sample Output
 [6, 5, 10]
 [1, 5, 9, 10]
 [9, 5, 1]
-""
-#not done anything by today
+"""
 
 
 #SOLUTION
