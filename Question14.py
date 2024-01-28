@@ -1,26 +1,52 @@
-# Solutions yet to come
+"""
+You are given two integer array a and b
+and perform differet operations
+
+"""
 import numpy
-n, m = map(int, input().split())
-a = numpy.array(input().split(), float)
-b = numpy.array(input().split(), float)
 
-# here I am performing addition
-summation = numpy.add(a, b)
-for i in range(len(summation)):
-    summation[i] = int(summation[i])
-difference = numpy.subtract(a, b)
-for i in range(len(difference)):
-    difference[i] = int(difference[i])
-multiplication = numpy.multiply(a, b)
-for i in range(len(multiplication)):
-    multiplication[i] = int(multiplication[i]) 
-division = numpy.divide(a, b)
-mod = numpy.mod(a, b)
-power = numpy.power(a, b)
+if __name__ == "__main__":
+    n, m = map(int, input().split())
+    a = []
+    for _ in range(n):
+        row = numpy.array(input().split(), float)
+        a.append(row)
+    a = numpy.array(a)
+    
+    b = []
+    for _ in range(n):
+        row = numpy.array(input().split(), float)
+        b.append(row)
+    b = numpy.array(b)
 
-print(summation)
-print(difference)
-print(multiplication)
-print(division)
-print(mod)
-print(power)
+    summation = numpy.add(a, b).astype(int)
+    difference = numpy.subtract(a, b).astype(int)
+    multiplication = numpy.multiply(a, b).astype(int)
+    division = numpy.divide(a, b).astype(int)
+    mod = numpy.mod(a, b).astype(int)
+    power = numpy.power(a, b).astype(int)
+
+    print(summation)
+    print(difference)
+    print(multiplication)
+    print(division)
+    print(mod)
+    print(power)
+
+"""
+input
+1 4
+1 2 3 4
+5 6 7 8
+"""
+
+"""
+output
+[[ 6  8 10 12]]
+[[-4 -4 -4 -4]]
+[[ 5 12 21 32]]
+[[0 0 0 0]]
+[[1 2 3 4]]
+[[    1    64  2187 65536]]
+
+"""
