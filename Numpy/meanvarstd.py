@@ -6,7 +6,7 @@ for _ in range(N):
 my_array = np.array(my_array)
 print(np.mean(my_array, axis=1))
 print(np.var(my_array, axis=0))
-print(f'{np.std(my_array, axis=None):.11f}')
+print(round(np.std(my_array),11))
 
 """
 input
